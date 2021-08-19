@@ -1,0 +1,18 @@
+{% if href %}
+<a href="{{href}}" title="{{title}}" class="button button--{{btnStyle}} header__cta{%if hasIcon %} button--icon{% endif %}">{{title}}
+    {% if hasIcon %}
+    <svg class="icon icon-arrow">
+        <use xlink:href="#icon-arrow"></use>
+    </svg>
+    {% endif %}
+</a>
+{% else %}
+<button type="{{type}}" aria-label="{{title}}" class="button button--{{btnStyle}} header__cta{%if hasIcon %} button--icon{% endif %}">{{title}}
+    {% if hasIcon %}
+    <svg class="icon icon-arrow">
+        <use xlink:href="#icon-arrow"></use>
+    </svg>
+    {% endif %}
+</button>
+{% endif %}
+

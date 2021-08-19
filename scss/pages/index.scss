@@ -1,0 +1,126 @@
+.hero {
+    background-color: var(--color-bg);
+    color: #FFF;
+
+    @include mq() {
+        padding-right: 5rem;
+        padding-left: 5rem;
+    }
+
+    &-wrapper {
+        text-align: center;
+        @include mq("desktop"){
+            grid-template-columns: auto auto;
+            display: grid;
+            column-gap: 3rem;
+            align-items: center;
+            text-align: left;
+        }
+    }
+
+    &__image{
+        display: none;
+        @include mq("desktop") {
+            display: block;
+        }
+    }
+
+    &__title {
+        font-size: 2.5rem;
+        font-weight: var(--font-extrabold);
+        margin-bottom: 2.5rem;
+
+
+        @include mq() {
+            font-size: 3.5rem;
+        }
+    }
+
+    &__subtitle {
+        font-size: 1.25rem;
+        margin-bottom: 2.5rem;
+        color: #ccd5db;
+
+        @include mq() {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+.feature {
+
+    &-item-container {
+        display: grid;
+        row-gap: 3rem;
+        padding-top: 4rem;
+        margin-bottom: var(--section-spacing);
+
+        @include mq () {
+            grid-template-columns: repeat(3, 1fr);
+            gap: 4rem 2rem;
+            padding-top: 5rem;
+        }
+    }
+
+    &__item {
+        font-size: 1.25rem;
+        position: relative;
+        padding: 2.5rem 2rem;
+        background-color: var(--color-secondary);
+        border-radius: var(--border-radius);
+        font-weight: var(--font-semibold);
+        border-bottom: .5rem solid var(--color-primary);
+        text-align: center;
+        transition: var(--transition);
+
+        &:hover {
+            transform: scale(1.015);
+        }
+
+        &__image {
+            position: absolute;
+            top: -15%;
+            left: 50%;
+            transform: translate(-50%, -15%);
+        }
+    }
+
+    &__title {
+        font-size: 2.5rem;
+        font-weight: var(--font-bold);
+        text-align: center;
+        text-decoration: underline var(--color-secondary) wavy;
+    }
+}
+
+.cta__form {
+    border-radius: var(--border-radius);
+    display: inline-flex;
+    flex-direction: column;
+
+    @include mq() {
+        flex-direction: row;
+    }
+
+    &__input {
+        border: none;
+        background-color: #FFF;
+        border-radius: var(--border-radius);
+        margin-bottom: 1rem;
+        padding: 1rem 1.5rem;
+        min-width: 16rem;
+        border: 2px solid transparent;
+
+        &:focus-visible,
+        &:focus {
+            border-color: var(--color-primary);
+            outline: unset;
+        }
+
+        @include mq() {
+            margin-bottom: unset;
+            margin-right: 1rem;
+            min-width: 22rem;
+        }
+    }
+}

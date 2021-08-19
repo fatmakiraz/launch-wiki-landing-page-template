@@ -1,0 +1,27 @@
+<footer class="section footer">
+    <div class="container">
+        <div class="footer-top-wrapper">
+            <div class="footer__social">
+                <div class="footer-social-photo-container">
+                    <figure class="footer__social__photo">
+                        <img loading= "lazy" src="img/pp.jpeg" alt="Kadir Furkan Kiraz">
+                    </figure>
+                    <figure class="footer__social__photo">
+                        <img loading= "lazy" src="img/pp-2.jpeg" alt="Fatma Kiraz">
+                    </figure>
+                </div>
+                <p class="footer__social__desc"> 🚀 <b>Stay in the loop!</b>
+                    <br>Follow our journey and our further products on Twitter!
+                </p>
+            </div>
+            <div class="footer-social-badge-container">
+                {% include 'social-badge' with username: 'hellokfk' %}
+                {% include 'social-badge' with username: 'hey_fk'  %}
+            </div>
+        </div>
+        <div class="footer-bottom-wrapper">
+            <div class="footer__item">• Launch Wiki by Launch Kitty</span></div>
+            <a class="footer__item link" href="#" title="Privacy & Terms" target="blank">Privacy & Terms</a>
+        </div>
+    </div>
+</footer>

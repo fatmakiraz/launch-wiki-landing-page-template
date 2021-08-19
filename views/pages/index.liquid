@@ -1,0 +1,57 @@
+{% layout 'master' %}
+{% block content %}
+<section class="section hero">
+    <div class="container">
+        <div class="hero-wrapper">
+            <div class="hero-content">
+                <h1 class="hero__title"><span class="mark">No more hearsay! </span><br>Let the numbers speak for themselves.
+                </h1>
+                <p class="hero__subtitle">
+                    Find answers to your various questions about launching a product on Product Hunt. <b>6609 products</b> have been analyzed!
+                </p>
+                {% include 'form' with title: "Reach All Stats for Free" %}
+            </div>
+            <img src="/img/hero.png" class="hero__image">
+        </div>
+    </div>
+</section>
+<svg viewBox="0 0 1440 99" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0H1440V99C1440 99 1002.19 51.79 720 51.79C437.809 51.79 0 99 0 99V0Z" fill="#06152B" />
+</svg>
+
+<section class="section feature">
+    <div class="container">
+        <div class="section__title">Product Hunt Launch Statistics</div>
+        <div class="feature__title">
+            We all have the same questions!
+        </div>
+        <div class="feature-item-container">
+            <div class="feature__item">
+                <img class="feature__item__image" src="img/question-mark.svg" alt="">
+                <p class="feature__item__content">Should I hunt my product myself or by a hunter?</p>
+            </div>
+            <div class="feature__item">
+                <img class="feature__item__image" src="img/question-mark.svg" alt="">
+                <p class="feature__item__content">How important is using gif or product video?</p>
+            </div>
+            <div class="feature__item">
+                <img class="feature__item__image" src="img/question-mark.svg" alt="">
+                <p class="feature__item__content">Which is the least competitive day?</p>
+            </div>
+            <div class="feature__item">
+                <img class="feature__item__image" src="img/question-mark.svg" alt="">
+                <p class="feature__item__content">When is the best time to submit to Product Hunt?</p>
+            </div>
+            <div class="feature__item">
+                <img class="feature__item__image" src="img/question-mark.svg" alt="">
+                <p class="feature__item__content">Which day has the most engagement?</p>
+            </div>
+            <div class="feature__item">
+                <img class="feature__item__image" src="img/question-mark.svg" alt="">
+                <p class="feature__item__content">Who is the most successful hunter?</p>
+            </div>
+        </div>
+        <div class="section__title">and more...</div>
+    </div>
+</section>
+{% endblock %}
